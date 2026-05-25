@@ -1,0 +1,36 @@
+/* Configuração do fundo da página */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8f5e9; /* Um tom de verde bem claro e suave (tema agro) */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Dando um destaque elegante para a tela de simulação (Canvas) */
+canvas {
+  display: block;
+  margin: 20px auto; /* Centraliza o quadro na parte superior da tela */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Cria uma sombra 3D em volta da simulação */
+  border-radius: 8px; /* Arredonda levemente as pontas do quadro */
+  border: 2px solid #2e7d32; /* Borda verde escura */
+}
+
+/* Estilizando os botões que criamos no p5.js */
+button {
+  background-color: #4caf50; /* Verde bonito e chamativo */
+  color: white; /* Texto branco */
+  border: none; /* Tira a borda feia padrão do navegador */
+  padding: 12px 20px; /* Espaço interno para o botão ficar gordinho */
+  border-radius: 25px; /* Deixa o botão bem arredondado (estilo pílula) */
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer; /* Muda o mouse para a "mãozinha" ao passar por cima */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Sombrinha no botão */
+  transition: all 0.3s ease; /* Faz com que as mudanças de cor sejam suaves */
+}
+
+/* Efeito de interatividade: o que acontece quando o mouse passa por cima do botão */
+button:hover {
+  background-color: #2e7d32; /* Fica com um verde mais escuro */
+  transform: scale(1.05); /* O botão cresce 5% dando um efeito de "pulo" */
+}
